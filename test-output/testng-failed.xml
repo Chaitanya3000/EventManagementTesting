@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="TestCases.BookingTestCases">
+        <methods>
+          <include name="TC_BK_04_invalidGuestCount"/>
+          <include name="TC_BK_03_invalidEmailFormat"/>
+          <include name="setup"/>
+          <include name="TC_BK_01_validBooking"/>
+          <include name="TC_BK_02_missingFirstName"/>
+          <include name="TC_BK_06_emptyEventDetails"/>
+          <include name="TC_BK_05_bookingWithNonVeg"/>
+        </methods>
+      </class> <!-- TestCases.BookingTestCases -->
+      <class name="TestCases.ContactUsTestCases">
+        <methods>
+          <include name="TC_CT_03_invalidEmail"/>
+          <include name="TC_CT_05_longSubject"/>
+          <include name="setup"/>
+          <include name="TC_CT_06_specialCharsInName"/>
+          <include name="TC_CT_04_emptyMessage"/>
+          <include name="TC_CT_02_missingName"/>
+          <include name="TC_CT_01_validContact"/>
+        </methods>
+      </class> <!-- TestCases.ContactUsTestCases -->
+      <class name="TestCases.RunnerTestNG">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- TestCases.RunnerTestNG -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
